@@ -1,2 +1,50 @@
-body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f0f0f0; } 
-button { padding: 10px 20px; font-size: 16px; cursor: pointer; } 
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Horizontal scroll container */
+.horizontal-scroll {
+    display: flex;              /* horizontal layout */
+    overflow-x: auto;           /* horizontal scroll */
+    width: 90%;                 /* container width */
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #fff;
+    gap: 10px;                  /* space between images */
+}
+
+.horizontal-scroll img {
+    height: 150px;              /* fixed height */
+    flex-shrink: 0;             /* prevent image from shrinking */
+    border-radius: 8px;         /* optional rounded corners */
+}
+/* Scrollable container */
+.scroll-container {
+    width: 80%;          /* width of scroll area */
+    height: 300px;       /* fixed height */
+    overflow-y: scroll;  /* vertical scroll */
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+/* Optional scrollbar style (modern browsers) */
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
