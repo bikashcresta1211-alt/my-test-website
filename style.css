@@ -26,7 +26,8 @@ button {
 
 .horizontal-scroll img {
     height: 150px;              /* fixed height */
-    flex-shrink: 0;             /* prevent image from shrinking */
+       width: auto;        /* scale width automatically */
+ flex-shrink: 0;             /* prevent image from shrinking */
     border-radius: 8px;         /* optional rounded corners */
 }
 
