@@ -11,6 +11,7 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 /* Horizontal scroll container */
 .horizontal-scroll {
     display: flex;              /* horizontal layout */
@@ -28,7 +29,8 @@ button {
     flex-shrink: 0;             /* prevent image from shrinking */
     border-radius: 8px;         /* optional rounded corners */
 }
-/* Scrollable container */
+
+/* Vertical scrollable container */
 .scroll-container {
     width: 80%;          /* width of scroll area */
     height: 300px;       /* fixed height */
